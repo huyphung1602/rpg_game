@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{3616739F-2F16-70A3-8846-58A28BB0F648}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AreaEntrance.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerLoader.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="13" Column="1" />
-      <File FileName="Assets/Scripts/AreaExit.cs" Line="28" Column="79" />
-      <File FileName="Assets/Scripts/AreaEntrance.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="12" Column="38" />
+      <File FileName="Assets/Scripts/AreaExit.cs" Line="15" Column="35" />
+      <File FileName="Assets/Scripts/AreaEntrance.cs" Line="8" Column="1" />
+      <File FileName="Assets/Scripts/PlayerLoader.cs" Line="7" Column="30" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +12,7 @@
           <Node name="rpg_game" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="AreaEntrance.cs" selected="True" />
+                <Node name="PlayerLoader.cs" selected="True" />
               </Node>
             </Node>
           </Node>
