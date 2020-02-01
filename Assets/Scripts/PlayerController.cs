@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D theRB;
+    [SerializeField]float moveSpeed = 2f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +16,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
     }
 }
