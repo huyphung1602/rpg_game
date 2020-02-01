@@ -7062,7 +7062,7 @@ PrefabInstance:
         type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1404744876}
+      objectReference: {fileID: 0}
     - target: {fileID: 5779230884427387092, guid: a7346f753baed41f9a4e4ac0c641e9dd,
         type: 3}
       propertyPath: theMap
@@ -7075,9 +7075,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7346f753baed41f9a4e4ac0c641e9dd, type: 3}
---- !u!4 &1404744876 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7116445208202918027, guid: 2af7c87bf76284c79b3e02c9ebd7cb77,
-    type: 3}
-  m_PrefabInstance: {fileID: 953303017}
-  m_PrefabAsset: {fileID: 0}
