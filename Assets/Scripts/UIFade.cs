@@ -10,13 +10,21 @@ public class UIFade : MonoBehaviour
     public Image fadeScreen;
     public float fadeSpeed;
 
-    public bool shouldFadeFromBlack;
-    public bool shouldFadeToBlack;
+    private bool shouldFadeFromBlack;
+    private bool shouldFadeToBlack;
 
     // Start is called before the first frame update
     void Start()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
@@ -28,10 +36,10 @@ public class UIFade : MonoBehaviour
                 fadeScreen.color.r,
                 fadeScreen.color.g,
                 fadeScreen.color.b,
-                Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime)
+                Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime)
                 );
 
-            if (fadeScreen.color.a == 1f)
+            if (fadeScreen.color.a == 0f)
             {
                 shouldFadeFromBlack = false;
             }
@@ -43,9 +51,9 @@ public class UIFade : MonoBehaviour
                 fadeScreen.color.r,
                 fadeScreen.color.g,
                 fadeScreen.color.b,
-                Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime)
+                Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime)
                 );
-            if (fadeScreen.color.a == 0f)
+            if (fadeScreen.color.a == 1f)
             {
                 shouldFadeToBlack = false;
             }

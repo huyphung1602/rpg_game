@@ -20275,6 +20275,11 @@ PrefabInstance:
       propertyPath: areaToLoad
       value: Countryside
       objectReference: {fileID: 0}
+    - target: {fileID: 8097260981231104617, guid: ae56680d69afd45fd9b6353669293404,
+        type: 3}
+      propertyPath: waitToLoad
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8097260981231104620, guid: ae56680d69afd45fd9b6353669293404,
         type: 3}
       propertyPath: m_Name
