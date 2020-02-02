@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class UIFade : MonoBehaviour
 {
+    public static UIFade instance;
+
     public Image fadeScreen;
     public float fadeSpeed;
 
@@ -14,7 +16,7 @@ public class UIFade : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        instance = this;
     }
 
     // Update is called once per frame
@@ -48,5 +50,17 @@ public class UIFade : MonoBehaviour
                 shouldFadeToBlack = false;
             }
         }
+    }
+
+    public void FadeToBlack()
+    {
+        shouldFadeToBlack = true;
+        shouldFadeFromBlack = false;
+    }
+
+    public void FadeFromBlack()
+    {
+        shouldFadeFromBlack = true;
+        shouldFadeToBlack = false;
     }
 }
