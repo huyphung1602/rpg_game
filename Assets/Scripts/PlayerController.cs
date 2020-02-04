@@ -22,7 +22,10 @@ public class PlayerController : MonoBehaviour
             instance = this;
         } else
         {
-            Destroy(gameObject);
+            if (instance != this)
+            {
+                Destroy(gameObject);
+            }
         }
         DontDestroyOnLoad(gameObject);
     }

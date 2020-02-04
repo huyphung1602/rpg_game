@@ -16,14 +16,6 @@ public class UIFade : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
         DontDestroyOnLoad(gameObject);
     }
 
